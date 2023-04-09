@@ -31,3 +31,24 @@
             - Detail => http://localhost:5173/<id>
                 pada <id> bisa isi dengan angka 1-100 dsb...
             - Login => http://localhost:5173/login
+
+## Navigation
+
+    Todo:
+        1.  App.jsx
+            - pasang Link untuk halaman Home & Detail
+            - definisikan path apa  yang kita tuju bisa menggunakan props to
+            - hapus import dari App.css
+        2.  Home.jsx
+            - deklarasikan hoook users untuk data fake apinya
+            - data fake api diambil dari jsonplaceholder :https://jsonplaceholder.typicode.com/users
+            - pasang useNavigate dari react-router-dom
+            - gunakan useEffect untuk menampilkan data users
+            - pasang handleGoToDetail untuk menangkap nilai dari id,
+              agar bisa kehalaman detail sesuai id dari user
+            - gunakan map untuk mencetak nilai dari users
+        3.  main.jsx
+            - hapus import dari index.css
+        4.  pengujian pada browser:
+            - Home => http://localhost:5173/
+                - klik  button go to detail
