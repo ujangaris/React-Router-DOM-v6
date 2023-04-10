@@ -79,3 +79,23 @@
             - Home => http://localhost:5173/
                 - klik  button go to detail
                 - kemudian klik menu post / product
+
+## Private Route
+
+    Todo:
+        1.  routes/ProtectedRoute.jsx
+            - buat arrowfunction Protected Route
+            - pasang props yang nantinya akan digunakana untuk memanggil children
+            - buat kondisi fake authentikasi, bernilai true atau false
+            - import dan Pasang Navigate dari react router dom tanpa deklarasi
+            - buat kondisi juka fakeAuth bernilai false maka akan diredirect kehalaman /login
+            - jika fakeAuth bernilai true akan berhasil mengakses halaman Details
+        2.  App.jsx
+            - import dan pasang ProtectedRoute
+            - bungkus routing apa aja yang mau di protected,
+              pada contoh kali ini adalah halaman Detail
+        3.  pengujian pada browser:
+            - Home => http://localhost:5173/
+                - klik  button go to detail
+                - jika fakeAuth bernilai true akan diredirect kehalaman Details
+                - jika fakeAuth bernilai false akan diredirect kehalaman Login
