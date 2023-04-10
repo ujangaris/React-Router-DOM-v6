@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, Outlet, useParams } from 'react-router-dom'
 
 const Detail = () => {
   // pasang useparams dari react router dom
@@ -23,6 +23,13 @@ const Detail = () => {
       <h2>params id: {id}</h2>
       {/* cetak data jsonnya kedalam browser */}
       <pre>{JSON.stringify(user, null, 2)}</pre>
+      <hr />
+      {/* buat navigasi untuk children Detail */}
+      <nav>
+        <Link to='post'>Post</Link> |<Link to='product'>Product</Link>
+      </nav>
+      {/* Pasang Outlet dari react router dom */}
+      <Outlet />
     </div>
   )
 }

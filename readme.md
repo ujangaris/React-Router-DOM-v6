@@ -61,3 +61,21 @@
             - pasang hooks user
             - get data user berdasarkan id
             - cetak data jsonnya kedalam browser
+
+## Nested Route
+
+    Todo:
+        1.  App.jsx
+            - membuat children dari component Details
+            - noted: jangan diberikan slice karna kalau children tidak perlu
+        2.  components/Post.jsx
+            - buat functional component Post
+        3.  components/Product.jsx
+            - buat functional component Product
+        4.  pages/Detail.jsx
+            - Pasang Outlet dari react router dom
+            - buat navigasi untuk children Detail
+        5.  pengujian pada browser:
+            - Home => http://localhost:5173/
+                - klik  button go to detail
+                - kemudian klik menu post / product
