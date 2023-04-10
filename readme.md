@@ -52,3 +52,12 @@
         4.  pengujian pada browser:
             - Home => http://localhost:5173/
                 - klik  button go to detail
+
+## Reading URL Params
+
+    Todo:
+        1.  Detail.jsx
+            - pasang useparams dari react router dom
+            - pasang hooks user
+            - get data user berdasarkan id
+            - cetak data jsonnya kedalam browser
